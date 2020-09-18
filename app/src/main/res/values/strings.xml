@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">kotlin_sharedpreferences</string>
+    <string name="login_note">Kotlin - Login and Logout </string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_login">Login</string>
+    <string name="lbl_logout">Keluar Aplikasi</string>
+</resources>
