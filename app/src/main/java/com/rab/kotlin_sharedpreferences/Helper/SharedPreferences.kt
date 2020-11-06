@@ -17,28 +17,33 @@ class SharedPreferences(val context: Context) {
         editor!!.commit()
     }
 
-    fun save(KEY_NAME: String, value: Int) {
-        val editor: SharedPreferences.Editor = sharedPref.edit()
-        editor.putInt(KEY_NAME, value)
-        editor.commit()
-    }
-
-    fun save(KEY_NAME: String, status: Boolean) {
-        val editor: SharedPreferences.Editor = sharedPref.edit()
-        editor.putBoolean(KEY_NAME, status!!)
-        editor.commit()
-    }
+//    fun save(KEY_NAME: String, value: Int) {
+//        val editor: SharedPreferences.Editor = sharedPref.edit()
+//        editor.putInt(KEY_NAME, value)
+//        editor.commit()
+//    }
+//
+//    fun save(KEY_NAME: String, status: Boolean) {
+//        val editor: SharedPreferences.Editor = sharedPref.edit()
+//        editor.putBoolean(KEY_NAME, status!!)
+//        editor.commit()
+//    }
 
     fun getString(KEY_NAME: String): String? {
         return sharedPref.getString(KEY_NAME, null)
     }
 
-    fun getInt(KEY_NAME: String): Int {
-        return sharedPref.getInt(KEY_NAME, 0)
-    }
+//    fun getInt(KEY_NAME: String): Int {
+//        return sharedPref.getInt(KEY_NAME, 0)
+//    }
+//
+//    fun getBoolean(KEY_NAME: String, defaultValue: Boolean): Boolean {
+//        return sharedPref.getBoolean(KEY_NAME, defaultValue)
+//    }
 
-    fun getBoolean(KEY_NAME: String, defaultValue: Boolean): Boolean {
-        return sharedPref.getBoolean(KEY_NAME, defaultValue)
+
+    fun isLoggedIn(KEY_NAME: String): Boolean? {
+        return getString(KEY_NAME)!=null;
     }
 
     fun clear() {
