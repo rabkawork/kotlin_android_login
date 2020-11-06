@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/sess_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -19,12 +19,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnLogout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="@string/lbl_logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/username" />
+        app:layout_constraintTop_toBottomOf="@id/sess_username" />
 </androidx.constraintlayout.widget.ConstraintLayout>
